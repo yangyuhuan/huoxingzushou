@@ -1,0 +1,16 @@
+<div class="CGTopContent-header">
+    <div class="btn" ui-sref="tabs.message"><img src="images/back.png">CGTop</div>
+</div>
+<div class="CGTopContent-banner" ng-click="cancle()"><img src="images/CGTOPContent-banner_02.jpg"> </div>
+<div class="CGTopContent-main">
+    <h1>创意在哪里？</h1>
+    <p>关注创意领域的实践和动态。在这里，您既可体验鲜活而精彩的创意案例，聆听专家对创意难点问题的解答，又可掌握实用工具，并紧扣前沿，与广大经理人和精英切磋创意之道。</p>
+</div>
+<div class="model" ng-show="model_show"></div>
+<div class="model_affirm" ng-show="model_show">
+    <h4>是否使用流量播放</h4>
+    <ul>
+        <li ng-click="affirm()">取消</li>
+        <li class="clearborder" ng-click="affirm()" ui-sref="tabs.message_video_play">确定</li>
+    </ul>
+</div>

@@ -1,0 +1,93 @@
+<ion-tabs class="tabs-top tabs-striped tabsTop top_bg">
+    <ion-tab title="CGTop">
+        <ion-view>
+            <ion-content>
+                <div class="CGTop-content">
+                    <div class="CGTop-box CGTop-poster" ui-sref="tabs.message_video">
+                        <h1>创意在哪里？</h1>
+                        <p>#海报设计</p>
+                    </div>
+                    <div class="CGTop-box CGTop-special" ui-sref="tabs.message_video">
+                        <h1>奇幻森林之旅</h1>
+                        <p>#影视特效</p>
+                    </div>
+                    <div class="CGTop-box CGTop-suffer" ui-sref="tabs.message_video">
+                        <h1>我们一路向前</h1>
+                        <p>#行业经验</p>
+                    </div>
+                </div>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+    <ion-tab title="活动通知">
+        <ion-view>
+            <ion-content>
+                <!--下拉刷新-->
+                <ion-refresher pulling-text="下拉刷新" on-refresh="refresh()">
+                </ion-refresher>
+                <div class="community_content" ng-repeat="post in posts"  ui-sref="tabs.message_details">
+                    <div class="community_content_pic">
+                        <img ng-src="{{post.images}}">
+                    </div>
+                    <div class="community_content_text">
+                        <h2>{{post.title}}</h2>
+                        <p>{{post.content}}</p>
+                        <div class="community_content_bot">
+                            <div class="fl community_content_bot_l">
+                                <div class="community_content_bot_l_pic fl">
+                                    <img ng-src="{{post.bTimages}}">
+                                </div>
+                                <p class="fl">{{post.location}}</p>
+                            </div>
+                            <div class="fl community_content_bot_r">
+                                <div class="community_content_bot_r_pic fl">
+                                    <img ng-src="{{post.bBimages}}">
+                                </div>
+                                <p class="fl">{{post.date}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--无限滚动-->
+                <ion-infinite-scroll on-infinite="loadMore()" immediate-check="false"></ion-infinite-scroll>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+    <ion-tab title="校园通知">
+        <ion-view>
+            <ion-content>
+                <!--下拉刷新-->
+                <ion-refresher pulling-text="下拉刷新" on-refresh="notice_refresh()">
+                </ion-refresher>
+                <div class="CGTopBroadcast-main"  ui-sref="tabs.message_notice">
+                    <ul class="content" ng-repeat="inform in informs">
+                        <li>
+                            <h2>{{inform.title}}</h2>
+                            <h4>#{{inform.classify}}</h4>
+                            <h3>{{inform.content}}</h3>
+                            <p class="position">{{inform.date}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--无限滚动-->
+                <ion-infinite-scroll on-infinite="notice_loadMore()" immediate-check="false"></ion-infinite-scroll>
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+    <ion-tab title="邮件">
+        <ion-view>
+            <ion-content>
+                <!--下拉刷新-->
+                <ion-refresher on-refresh="email_Refresh()" spinner="spiral">
+                </ion-refresher>
+                <div class="email">
+                    <div class="email_pic">
+                        <img src="images/email_03.png">
+                    </div>
+                    <p>还没有收到邮件哦~</p>
+                </div>
+
+            </ion-content>
+        </ion-view>
+    </ion-tab>
+</ion-tabs>

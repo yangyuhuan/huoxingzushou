@@ -1,0 +1,48 @@
+
+<div id="home">
+    <div class="header">
+        <div class="head_bg fl"><a href="Myscore.html"><img src="images/blank_head.png"></a></div>
+        <div class="info fl">
+            <h4><span>{{products.name}}</span>总排名：<i>{{products.rank}}</i></h4>
+            <p>平均成绩：<i>{{products.score}}</i></p>
+            <p>职业素质：<i>{{products.quality}}</i></p>
+        </div>
+        <div class="sign_in fr"><img src="images/sign_in.png"></div>
+    </div>
+    <div class="main clearfix">
+        <div class="inner">
+            <img src="images/boat_pic.png"/>
+            <div class="clearfix">
+                <div class="myworkLeft fl">
+                    <h2><img src="images/my_Works.png">我的作品</h2>
+                </div>
+                <a class="fr clearfix" href="works_box.html">开启</a>
+            </div>
+            <div class="product_show clearfix">
+                <div class="show" ng-repeat="imgsrc in products.work">
+                    <div class="show_pic"><img ng-src={{imgsrc.img}}/></div>
+                    <div class="pro_info">
+                        <h3 class="name1">{{products.name}}</h3>
+                        <p class="Class1">{{products.class}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="myworkLeft fl">
+                    <h2><img src="images/five_star.png">五星作品</h2>
+                </div>
+                <a class="fr" href="works_box.html">开启</a>
+            </div>
+            <div class="product_show">
+                <div class="show" ng-repeat="imgsrc in fiveStars">
+                    <div class="show_pic"><img ng-src={{imgsrc.img}}/></div>
+                    <div class="pro_info">
+                        <h3 class="name1">{{imgsrc.name}}</h3>
+                        <p class="Class1">{{imgsrc.class}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css">
+		<script src="lib/icon/js/angular.min.js"></script>
+		<script src="lib/icon/js/ionic.bundle.min.js"></script>
+		<script src="js/app.js"></script>
+		
+	</head>
+	<body class="home gray-bg" ng-controller="loginCtrl">
+		<div class="title">
+			<a href="login.html"><span class="fl"> &lt; </span><p class="fl">登陆</p></a>
+		</div>
+		<div class="main-z">
+			<input type="text" placeholder="用户名(多于3位)"  class="inp" ng-model="name" /><br />
+			<input type="password" placeholder="密码(多于6位)"  class="inp" ng-model="password" /><br />
+			<p>{{con}}</p>
+			<a ng-href="{{htmlSrc2}}"><input type="button" value="登陆" class="sub" ng-click="long_in()" /></a><br />
+			<a href="initPassword.html"><i>忘记密码?</i></a>
+		</div>
+	</body>
+</html>

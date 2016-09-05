@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="lib/icon/js/angular.min.js"></script>
+    <script src="lib/icon/js/ionic.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>设置</title>
+
+</head>
+
+<body ng-controller="loginCtrl">
+    <div class="setHeader">
+        <a href="Myscore.html"><span>&lt;</span>设置</a>
+    </div>
+    <div class="setMain">
+        <div class="person_pic">
+            <a href="#">头像<a href="index.html"><img src="images/true_head.png"></a></a>
+        </div>
+        <div class="other_item">
+            <ul>
+                <li><a href="initPassword.html">修改密码</a></li>
+                <li><a href="#">消息通知</a>
+                    <p><span ng-class="openMessageName" ng-click="openSend()"></span></p>
+                </li>
+                <li ng-click="clickOut()"><a>退出当前账号</a></li>
+                <li><a href="#">升级<img src="images/red_dot.png"><p>v.1.0</p></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="model" ng-show="youSure"></div>
+    <div class="model_affirm" ng-show="youSure">
+        <h4>确认退出</h4>
+        <ul>
+            <li ng-click="whileOut()">取消</li>
+            <li class="clearborder" ng-click="whileOut()"><a href="register.html">确定</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+

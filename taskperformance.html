@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="shareapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/person.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <script src="lib/icon/js/angular.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/angular-chart.min.js"></script>
+    <script src="js/share.js"></script>
+</head>
+<body ng-controller="ForalinkCtr">
+    <div class="taskperformance">
+        <div class="taskperformance_top">
+            <h4>{{products.name}}</h4>
+            <p class="one_p">在移动平台图标设计课中</p>
+            <p class="two_p">击败了<span class="text_col">{{products.designPass}}</span>的同学</p>
+        </div>
+        <a class="one_a bg_col" ng-click="ta_membrane() || ta_share()"><i><img src="images/one_a_i_03.png" /></i>分享</a>
+        <a class="two_a" ng-click="applko()"><i><img src="images/one_a_i_05.png" /></i>保存</a>
+        <div class="Foralink" ng-class="blck">已获取链接</div>
+        <div class="taskperformance_membrane" ng-class="membrane"></div>
+        <div class="taskperformance_share" ng-class="share">
+            <h4>分享到</h4>
+            <ul class="ul_float">
+                <li><a href="#"><img src="images/taskperformance_share_03.png" /> <span>微信好友</span></a></li>
+                <li><a href="#"><img src="images/taskperformance_share_05.png" /> <span>新浪微博</span></a></li>
+                <li><a href="#"><img src="images/taskperformance_share_07.png" /> <span>朋友圈</span></a></li>
+                <li><a href="#"><img src="images/taskperformance_share_09.png" /> <span>获取链接</span></a></li>
+            </ul>
+            <a href="#" ng-click="task_out()"><h5 class="bg_col">取消</h5></a>
+        </div>
+    </div>
+</body>
+</html>

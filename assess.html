@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <title>弹框</title>
+    <link href="css/base.css" rel="stylesheet">
+    <style>
+
+        .evaluate_box{width: 74.58%;border-radius: 0.5rem;padding-top: 2.375rem;border: #ccc solid 1px;}
+        .star_activ{width: 2.375rem;height: 2.375rem;background:url("images/light_star.png") no-repeat left top;background-size: cover;display: inline-block;margin: 0 0.2rem;}
+        .evaluate_box .evaluate_boxTop .star_box{width: 2.375rem;height: 2.375rem;background:url("images/blank_star.png") no-repeat left top;background-size: cover;display: inline-block;margin: 0 0.2rem;}
+        .evaluate_box .evaluate_boxTop{text-align: center;}
+        .evaluate_box .evaluate_boxTop p{font-size: 0.8rem;line-height: 2.125rem;margin-bottom: 0.7rem;color: #bfbfbf;}
+
+        .evaluate_box .evaluate_boxBottom{}
+        .evaluate_box .evaluate_boxBottom .blueItem{text-align: center;background: #19adb9;border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem}
+        .evaluate_box .evaluate_boxBottom .blueItem span{font-size: 0.85rem;line-height: 2.125rem;color: #fff;}
+    </style>
+
+</head>
+<body>
+        <div class="evaluate_box">
+            <div class="evaluate_boxTop clearfix">
+                <div class="star_box boxstar"></div>
+                <div class="star_box boxstar"></div>
+                <div class="star_box boxstar"></div>
+                <div class="star_box boxstar"></div>
+                <p>很满意</p>
+            </div>
+            <div class="evaluate_boxBottom">
+                <div class="blueItem">
+                    <span>确定</span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

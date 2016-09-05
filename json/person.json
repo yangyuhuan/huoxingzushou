@@ -1,0 +1,25 @@
+
+  {
+    "name":"李雷",
+    "logo":"images/true_head.png",
+    "rank":"11",
+    "score":"A-",
+    "quality":"95",
+    "class":"1512期UI视觉设计2班",
+    "work":[{"img":"images/Peking_Opera.png"},{"img":"images/Peking_Opera.png"},{"img":"images/Peking_Opera.png"},{"img":"images/Peking_Opera.png"}],
+    "handWork":"100%",
+    "checkingIn":"97%",
+    "pass":"85%",
+    "designPass":"95%",
+    "help":[{"time":"13：23","date":"2016/4/19","state":"处理中","assess":"评价"},
+      {"time":"13：23","date":"2016/4/19","state":"处理中","assess":"已评价"}],
+    "professionScore":[89,92,90,90,89,93],
+    "perfor":[{"time":"2016/4/19","changeScore":"+2","explain":"入选五星作品"},
+      {"time":"2016/4/10","changeScore":"-0.5","explain":"上午迟到"},
+      {"time":"2016/3/10","changeScore":"-1","explain":"下午缺勤"}]
+
+  }
+
+
+
+

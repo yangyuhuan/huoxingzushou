@@ -1,0 +1,41 @@
+<div id="help">
+    <div class="title help-title">
+        <a href="index.html"><span class="fl"> &lt; </span><p class="fl">火星助手</p></a>
+    </div>
+    <div class="content" ng-controller="helpCtrl">
+        <textarea class="your-text" ng-model="yourCont" ng-change="TextChage(yourCont)"></textarea>
+        <input type="submit" value="快来帮帮我" ng-class="helpme" ng-click="askForHelp()" />
+    </div>
+    <div class="you-asses" ng-show="help[0]">
+        <ul class="allhelp">
+            <li>
+                <p>提交时间</p>
+                <p>处理状态</p>
+                <p>处理状态</p>
+            </li>
+            <li ng-repeat="hel in help">
+                <p><i>{{hel.time}}</i>
+                    <span>{{hel.date}}</span>
+                </p>
+                <p>{{hel.state}}</p>
+                <p><a ng-click="clickToAssess($index)" ng-class="{'turnAssess': $index === assessClass[$index],'noAssess': $index != assessClass[$index]}">{{hel.assess}}</a></p>
+            </li>
+        </ul>
+    </div>
+    <div class="noHelp" ng-show="!help[0]">还没有向火星发出任何求助信号哦~</div>
+    <div class="membrane_ac" ng-show="moduleShow"></div>
+    <div class="evaluate_box" ng-show="moduleShow">
+        <ul class="evaluate_boxTop clearfix">
+            <li ng-repeat="star in stars" ng-click="lingtStar($index + 1)" ng-class="star.name"></li>
+        </ul>
+        <p class="result">{{result}}</p>
+        <div class="evaluate_boxBottom">
+            <div class="blueItem">
+                <span ng-click=[clickModuleNone(),clickAssess()]>确定</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

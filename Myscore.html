@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/person.css" rel="stylesheet">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width">
+    <script src="lib/icon/js/angular.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/angular-chart.min.js"></script>
+    <script src="js/Mygrades.js"></script>
+</head>
+<body ng-controller="LineCtrl">
+<div class="header">
+    <div class="fl header_left">
+        <a href="setting.html"><img src="images/header_left.png" /></a>
+    </div>
+    <div class="fl text_colB header_right">
+        <h2>{{products.name}}<span class="bg_col">总排名：{{products.rank}}</span></h2>
+        <p>班级：{{products.class}}</p>
+        <p><span>作业提交率：{{products.handWork}}</span>&nbsp;&nbsp;<span>考勤率：{{products.checkingIn}}</span></p>
+    </div>
+</div>
+<div class="results">
+    <div class="results_top">
+        <img class="fl" src="images/results_top.png" />
+        <a href="taskperformance.html"><p class="fl text_colB">专业成绩</p></a>
+    </div>
+    <div>
+        <canvas id="line" class="chart chart-line" chart-data="data" chart-labels="labels" chart-series="series" chart-options="options"
+                chart-dataset-override="datasetOverride" chart-click="onClick">
+        </canvas>
+    </div>
+</div>
+<div class="Qualitypoints">
+    <div class="Qualitypoints_text clearfix">
+        <div class="Qualitypoints_text_top fl">
+            <img src="images/Mygrades_(1)_10.png" />
+        </div>
+        <p class="fl text_colB">职业素质分</p>
+    </div>
+    <div class="Articlenumber">
+        <a href="professional.html"><div class="Thenumerical" ng-attr-style="{{width}}"></div></a>
+    </div>
+</div>
+<div class="runchart">
+    <div class="runchart_top">
+        <img class="fl" src="images/Mygrades_(1)_13.png" />
+        <p class="fl">击败了{{products.pass}}的同学</p>
+    </div>
+    <div ng-controller="MixedChartCtrl">
+        <canvas id="base" class="chart-bar" chart-data="data" chart-labels="labels" chart-colors="colors"
+                chart-dataset-override="datasetOverride">
+        </canvas>
+    </div>
+</div>
+<div class="footer">
+    <img src="images/Mygrades_(1)_28.png" />
+</div>
+</body>
+</html>

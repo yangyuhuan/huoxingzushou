@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css">
+		<script src="lib/icon/js/angular.min.js"></script>
+		<script src="lib/icon/js/ionic.bundle.min.js"></script>
+		<script src="js/app.js"></script>
+
+	</head>
+	<body class="register" ng-controller="loginCtrl">
+		<div class="register-modal">
+			<div class="logo">
+				<img src="images/icon1.png">
+			</div>
+			<div class="register-input">
+				<input type="text" placeholder="用户名" ng-model="name" /><br />
+				<input type="password" placeholder="密码" ng-model="password" /><br />
+				<a ng-href="{{htmlSrc}}"><input type="button" value="登陆" class="logo_index" ng-click="login()"/></a><br />
+				<a href="initPassword.html"><p>忘记密码</p></a>
+				<div class="namePicture"><img src="images/icon2.png"></div>
+				<div class="codePicture"><img src="images/icon3.png"> </div>
+			</div>
+			
+		</div>
+	</body>
+</html>

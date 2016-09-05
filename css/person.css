@@ -1,0 +1,89 @@
+/*重置CSS*/
+body,div,p,i,span,h1,h2,h3,h4,h5,h6,ul,li,ol,dt,dd,dl,img,input{margin: 0;padding: 0;}
+input,img{border: 0;}
+a{text-decoration: none;}
+i{font-style: normal;}
+li{list-style: none;}
+body{font-size: 1.3rem;font-family: "Arial Unicode MS", "微软雅黑 Light";height: 100%;}
+/*共用CSS*/
+html{font-size: 62.5%;height: 100%;}
+.clearfix:after{content: "/200B";display: block;height: 0;clear: both;font-size: 0;*zoom:1;}
+.fl{display: inline;float: left;}
+.fr{display: inline;float: right;}
+.inner{width:1000px ;margin: 0 auto;}
+.ul_float li{float: left;}
+body ,body a{color: #fff;}
+.bg_col{background-color: #19adb9;}
+.text_col{color: #19adb9;}
+.text_colB{color: #505050;}
+.Thetitle{color: #fff;font-size: 1.5rem;font-family: arial, "宋体";}
+.absmiddle{position: absolute;left:0;right: 0;top:0;bottom:0;margin:auto;}
+/*Myscore\Mygrades(我的成绩)*/
+.header{width:100%;height: 11rem;}
+.header_left{border-radius: 50%;width: 6rem;height: 6rem;padding: 2.5rem 1.8rem 0 1.5rem;}
+.header_left a{height: 100%;width: 100%;display: block;}
+.header_left img{height: 100%;width: 100%;}
+.header_right{padding: 2.5rem 0 0 0;width: 17rem;}
+.header_right h2{margin-bottom: 0.6rem;}
+.header_right h2 span{margin-left: 0.8rem;width: 8.1rem;height: 1.9rem;border-radius: 0.4rem;color: #fff;text-align: center;line-height: 1.9rem;font-size: 1.3rem;padding: 0.4rem 1.3rem 0.4rem 1rem;}
+.header_right p{line-height: 2.5rem;}
+.results{height: 19.6rem;width: 100%;background-color: #f4fcfe;}
+.results .results_top{width: 100%;height: 2.3rem;padding: 0.4rem 0 0 1.5rem;border-bottom: 1px solid #d3f3ed;}
+.results .results_top img{width: 2.2rem;height: 1.7rem;margin-right: 1.2rem;}
+.Qualitypoints{width: 100%;height: 4.8rem;background-color: #f7f7f7;padding: 1.2rem 1.5rem 2rem 1.5rem;}
+.Qualitypoints .Qualitypoints_text_top{width: 2rem;height: 2rem;}
+.Qualitypoints .Qualitypoints_text_top img{width: 100%;height: 100%;}
+.Qualitypoints p{line-height: 2rem;padding-left: 3.6%;}
+.Qualitypoints .Articlenumber{height: 1.7rem;background-color: #efefef;width: 89%;margin-top: 1.05rem;border-radius: 0.65rem;}
+.Qualitypoints .Articlenumber .Thenumerical{height: 1.7rem;width:0%;border-radius: 0.65rem;background-image:linear-gradient(45deg,#57d1ae,#82d6d7,#a0d8f2);transition: 0.5s;}
+.runchart{width: 100%;height: 18.75rem;background-color: #9eccaf;}
+.runchart .runchart_top{width: 100%;height: 3.59rem;background-image:linear-gradient(45deg,#2dc59d,#32c4a4,#37c4ad);padding-left: 4.1%;padding-top: 0.6rem;border-bottom: 2px solid #55ceb6;}
+.runchart .runchart_top img{height: 2.5rem;width: 2.5rem;}
+.runchart .runchart_top p{line-height: 2.3rem;padding-left: 0.75rem;}
+.footer{background-color: #2da795;height: 4.2rem;z-index:99999;width: 100%;position: fixed;bottom:0;left: 0;}
+.footer img{width: 2.4rem;height: 1.4rem;position: absolute;left:0;right: 0;top:0;bottom:0;margin:auto;}
+/*professional(职业素质分)*/
+.professional_header{width: 100%;height: 3.8rem;line-height: 3.8rem;}
+.professional_header h4{font-weight: normal;}
+.professional_header span{margin: 0 0.9rem 0 1.2rem;width: 0.7rem;height: 1.2rem;background: url(../images/arrow_03.png) no-repeat;background-size: cover;display: inline-block;}
+.professional_banner{height: 17.4rem;background-color: #f4f5f7;position: relative;}
+.professional_banner h2{font-size: 4rem;color: #65baa3;position: absolute;left:43.5%;right: 0;top:22%;bottom:0;margin:auto;}
+.professional_banner p{position: absolute;left:36.5%;right: 0;top:44%;bottom:0;margin:auto;color: #65baa3;font-size:0.3rem;}
+.professional_banner .professional_banner_p2{position: absolute;left:37.5%;right: 0;top:52%;bottom:0;margin:auto;color: #65baa3;font-size:0.3rem;}
+.professional_footer{height: 25.2rem;}
+.professional_footer ul li{border-bottom: 2px solid #e9e9e9;color: #5a5a5a;line-height: 5.7rem;height: 5.7rem;font-size: 1.4rem;padding-left: 1.2rem;padding-right: 1.2rem;}
+.professional_footer ul li:nth-child(1){color: #3f4370;font-size: 2.2rem;}
+.professional_footer ul li:nth-child(4){border-bottom:0;}
+.professional_footer ul li span:nth-child(1){width: 30%;text-align: center;display: inline-block;}
+.professional_footer ul li span:nth-child(2){width: 37%;text-align: center;display: inline-block;}
+.professional_footer ul li span:nth-child(3){width: 30%;text-align: center;display: inline-block;}
+/*taskperformance(作业成绩)*/
+.taskperformance{background: url(../images/share_bg.png) no-repeat;background-size: cover;height: 100%;position: relative;}/*../images/share_bg.png*/
+.taskperformance .taskperformance_top{text-align: center;padding-top: 5.5rem;}
+.taskperformance .taskperformance_top h4{color: #1d3462;font-size: 2.4rem;}
+.taskperformance .taskperformance_top .one_p{color: #1d3462;font-size: 1.5rem;}
+.taskperformance .taskperformance_top .two_p{color: #606060;font-size: 1.5rem;}
+.taskperformance .taskperformance_top .two_p span{font-size: 3rem;margin: 0 0.8rem 0 1.5rem;font-weight: bold;}
+.taskperformance .one_a{color: #fff;width: 43%;height: 3.4rem;border-radius: 4px;display: inline-block;text-align: center;line-height: 3.4rem;font-size: 1.7rem;position: absolute;left:1rem;top:85%;}
+.taskperformance .two_a{color: #fff;width: 43%;height: 3.4rem;border-radius: 4px;display: inline-block;text-align: center;line-height: 3.4rem;font-size:
+1.7rem;position: absolute;right:1rem;top:85%;background-color: #fccb19;}
+.taskperformance i{width: 5.83%;height: 3.28%;}
+.taskperformance i img{width: 10%;height: 40%;position: absolute;top: 30%;left:25%;}
+.taskperformance  .Foralink{background-color: #000;opacity:0.4;height: 4.9rem;width: 12.5rem;text-align: center;line-height: 4.9rem;border-radius: 8px;
+    position: absolute;left:0;right: 0;top:0;bottom:0;margin:auto;display: none;}
+.ac{background-color: #000;opacity:0.4;height: 4.9rem;width: 12.5rem;text-align: center;line-height: 4.9rem;border-radius: 8px;
+    position: absolute;left:0;right: 0;top:0;bottom:0;margin:auto;display: block;}
+.taskperformance .taskperformance_membrane{background-color: #000;position:absolute;top:0;opacity: 0.5;width: 100%;height: 100%;display: none;}
+.membrane_ac{background-color: #000;position:absolute;top:0;opacity: 0.5;width: 100%;height: 100%;display: block;}
+.taskperformance .taskperformance_share{background: url(../images/taskperformance_share.png) no-repeat;background-size:cover;width: 74.3%;height: 39.8%;
+position: absolute;right: 0;left: 0;top: 0;bottom:0;margin: auto;display: none;}
+.taskperformance .taskperformance_share h4,.taskperformance .taskperformance_share_ac h4{font-size: 2rem;height:34.7%;line-height: 434.7%;text-align: center;color: #303030;}
+.taskperformance .taskperformance_share ul,.taskperformance .taskperformance_share_ac ul{height: 16.5%;padding-left: 7.48%;padding-bottom: 32%;}
+.taskperformance .taskperformance_share ul li,.taskperformance .taskperformance_share_ac ul li{width: 22.18%;margin-right:2%;text-align: center;}
+.taskperformance .taskperformance_share ul li span,.taskperformance .taskperformance_share_ac ul li span{color: #606060;font-size: 0.3rem;}
+.taskperformance .taskperformance_share ul li img,.taskperformance .taskperformance_share_ac ul li img{width: 90%;height: 90%;}
+.taskperformance .taskperformance_share h5,.taskperformance .taskperformance_share_ac h5{height: 16.7%;border-radius: 0px 0px 15px 15px;text-align: center;font-size: 1.7rem;line-height: 280%;font-family: 宋体;}
+.taskperformance_share_ac{background: url(../images/taskperformance_share.png) no-repeat;background-size:cover;width: 74.3%;height: 39.8%;
+    position: absolute;right: 0;left: 0;top: 0;bottom:0;margin: auto;display: block;}
+
+
